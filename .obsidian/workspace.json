@@ -15,9 +15,9 @@
               "state": {
                 "file": "csharp-notes.canvas",
                 "viewState": {
-                  "x": 1561.8119324992208,
-                  "y": 2936.862924325788,
-                  "zoom": -2.8280213053495906
+                  "x": -3127.7180382665,
+                  "y": 3321.934706647425,
+                  "zoom": -1.1825164271800195
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -185,6 +185,17 @@
   },
   "active": "3c34830ebe1eaded",
   "lastOpenFiles": [
+    "img/csharp-operators.png",
+    "img/specifying-real-numbers.png",
+    "img/non-primitive-types.png",
+    "img/primitive-types.png",
+    "img/logical-operators.png",
+    "img/arithmetic-operators.png",
+    "img/assignment-operators.png",
+    "img/bitwise-operators.png",
+    "img/comparison-operators.png",
+    "img/class-examples.png",
+    "csharp-notes.canvas",
     "links.md",
     "csharp-text-notes.md"
   ]

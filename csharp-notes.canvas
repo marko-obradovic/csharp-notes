@@ -3,7 +3,7 @@
 		{"id":"771575fa5a253565","type":"group","x":3680,"y":-880,"width":1204,"height":860,"color":"#7a8aff","label":"Application"},
 		{"id":"a2353fdacb5eade3","type":"group","x":3700,"y":-800,"width":544,"height":760,"color":"#85776b","label":"Assembly (DLL or EXE)"},
 		{"id":"0eededbb60fd4e41","type":"group","x":4320,"y":-800,"width":544,"height":760,"color":"#85776b","label":"Assembly (DLL or EXE)"},
-		{"id":"5e5308d05df094ba","type":"group","x":5280,"y":640,"width":1090,"height":130,"label":"How to set up for it"},
+		{"id":"5e5308d05df094ba","type":"group","x":5280,"y":680,"width":1090,"height":130,"label":"How to set up for it"},
 		{
 			"id":"e8b8a82b31f09424",
 			"type":"group",
@@ -40,282 +40,8 @@
 		{"id":"920fd6d3368285fd","type":"group","x":3724,"y":-480,"width":500,"height":180,"color":"2","label":"Namespace"},
 		{"id":"9637bbb3edb22990","type":"group","x":4344,"y":-480,"width":500,"height":180,"color":"2","label":"Namespace"},
 		{"id":"24e6c5520c7b6694","type":"group","x":4344,"y":-240,"width":500,"height":180,"color":"2","label":"Namespace"},
-		{
-			"id":"23d1a9a9abe24838",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":752,
-			"y":140,
-			"width":82,
-			"height":60
-		},
-		{
-			"id":"5770762ba92506dc",
-			"type":"text",
-			"text":"CLR (Common Language Run-time)",
-			"styleAttributes":{},
-			"x":739,
-			"y":-80,
-			"width":190,
-			"height":60
-		},
-		{
-			"id":"4e91ab8182bec5bc",
-			"type":"text",
-			"text":"Container that has some data (Attributes) and functions (Methods",
-			"styleAttributes":{},
-			"x":632,
-			"y":282,
-			"width":215,
-			"height":85,
-			"color":"4"
-		},
-		{
-			"id":"2cb24803a32ae6b1",
-			"type":"text",
-			"text":"Class Library (For building apps)",
-			"styleAttributes":{},
-			"x":466,
-			"y":140,
-			"width":166,
-			"height":55
-		},
-		{
-			"id":"1f1525450473a0f7",
-			"type":"text",
-			"text":"Components",
-			"styleAttributes":{},
-			"x":501,
-			"y":-22,
-			"width":137,
-			"height":60
-		},
-		{
-			"id":"0bb1da3026dff85a",
-			"type":"text",
-			"text":"0x00416A",
-			"styleAttributes":{"textAlign":"center","border":"invisible"},
-			"x":-927,
-			"y":1690,
-			"width":116,
-			"height":60
-		},
-		{
-			"id":"d3597461daf43c0c",
-			"type":"text",
-			"text":"1, 2, 3",
-			"styleAttributes":{"textAlign":"center","border":"invisible"},
-			"x":-911,
-			"y":1750,
-			"width":85,
-			"height":60,
-			"color":"5"
-		},
-		{"id":"500f1fe5eda52ab6","type":"file","file":"csharp_notes/img/non_primitive_types.png","x":46,"y":805,"width":200,"height":169},
-		{
-			"id":"f0c25616644e96ed",
-			"type":"text",
-			"text":"```c#\nusing System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      int[] array1 = new int[3] {1, 2, 3};\n      int[] array2 = array1;\n      array2[0] = 0;\n\n      Console.WriteLine(\"array1: {0}, array2: {1}\", array1[0], array2[0]);\n    }\n  }\n}\n```",
-			"styleAttributes":{},
-			"x":-640,
-			"y":1669,
-			"width":686,
-			"height":442
-		},
-		{
-			"id":"b2f63472b097e336",
-			"type":"text",
-			"text":"# Types\n",
-			"styleAttributes":{},
-			"x":840,
-			"y":1476,
-			"width":114,
-			"height":60
-		},
-		{
-			"id":"6c4257eee049ca0c",
-			"type":"text",
-			"text":"- You need to allocate memory\n- Memory allocated on heap\n- Garbage collection will look for unused objects and remove them. In some languages this is done manually.",
-			"styleAttributes":{},
-			"x":328,
-			"y":1798,
-			"width":300,
-			"height":184
-		},
-		{
-			"id":"b3fccd8ed8574e6c",
-			"type":"text",
-			"text":"Reference Types",
-			"styleAttributes":{},
-			"x":717,
-			"y":1860,
-			"width":160,
-			"height":60,
-			"color":"3"
-		},
-		{
-			"id":"22f6022163c6a194",
-			"type":"text",
-			"text":"Value Types",
-			"styleAttributes":{},
-			"x":948,
-			"y":1860,
-			"width":129,
-			"height":60,
-			"color":"3"
-		},
-		{"id":"6bf684b38f4bdf90","type":"file","file":"csharp_notes/img/assignment_operators.png","x":-2040,"y":235,"width":400,"height":196},
-		{
-			"id":"60ec31aee12d3130",
-			"type":"text",
-			"text":"```c#\nusing System;\n\nnamespace HelloWorld\n{\n  public class Person\n  {\n    public int Age;\n  }\n  class Program\n  {\n    static void Main(string[] args)\n    {\n        Person person = new Person() {Age = 20};\n        Console.WriteLine(\"Age before applying AddAge(): {0}\", person.Age);\n        AddAge(person);\n        Console.WriteLine(\"Age after applying AddAge(): {0}\", person.Age);\n    }\n    public static void AddAge(Person person)\n    {\n      person.Age += 10;\n    }\n  }\n}\n```",
-			"styleAttributes":{},
-			"x":-640,
-			"y":2450,
-			"width":694,
-			"height":610
-		},
-		{
-			"id":"bae4b2711c53be71",
-			"type":"text",
-			"text":"So basically both these arrays are referencing exactly the same list, it's not a copy of the list - that means that when you edit the list of one, the other one, referencing the exact same list, will show the changes when printed",
-			"styleAttributes":{},
-			"x":-1280,
-			"y":2450,
-			"width":260,
-			"height":226
-		},
-		{"id":"809e0213b55f8cde","type":"file","file":"csharp_notes/links.md","x":-800,"y":-170,"width":400,"height":80},
-		{"id":"8fd67c134cdbdc21","type":"file","file":"csharp_notes/img/csharp_operators.png","x":-1155,"y":245,"width":310,"height":399},
-		{"id":"ccbf281a88bd5571","type":"file","file":"csharp_notes/img/logical_operators.png","x":-2040,"y":515,"width":400,"height":228},
-		{
-			"id":"5204ca83b1d434df",
-			"type":"text",
-			"text":"Namespaces",
-			"styleAttributes":{},
-			"x":880,
-			"y":-380,
-			"width":136,
-			"height":60
-		},
-		{
-			"id":"557d19ce2a356575",
-			"type":"text",
-			"text":"Classes",
-			"styleAttributes":{},
-			"x":880,
-			"y":-480,
-			"width":97,
-			"height":60
-		},
-		{
-			"id":"2c4c4322496541db",
-			"type":"text",
-			"text":"Assemblies",
-			"styleAttributes":{},
-			"x":880,
-			"y":-290,
-			"width":125,
-			"height":60
-		},
-		{
-			"id":"586db2abd17d3c97",
-			"type":"text",
-			"text":"C# Is the programming language",
-			"styleAttributes":{},
-			"x":-192,
-			"y":-410,
-			"width":210,
-			"height":60,
-			"color":"4"
-		},
-		{
-			"id":"5c87b32b7c79b2a6",
-			"type":"text",
-			"text":".NET",
-			"styleAttributes":{},
-			"x":160,
-			"y":-260,
-			"width":78,
-			"height":60
-		},
-		{
-			"id":"0a8c11081c6177a4",
-			"type":"text",
-			"text":"Architecture of .NET Apps",
-			"styleAttributes":{},
-			"x":480,
-			"y":-400,
-			"width":228,
-			"height":60
-		},
-		{
-			"id":"0b4195da84b2eb6e",
-			"type":"text",
-			"text":"C#",
-			"styleAttributes":{},
-			"x":-120,
-			"y":-160,
-			"width":66,
-			"height":60
-		},
-		{"id":"48de27fe2f28fe09","type":"file","file":"csharp_notes/img/bitwise_operators.png","x":-2040,"y":791,"width":400,"height":231},
-		{"id":"25a86560c6b60e8f","type":"file","file":"csharp_notes/img/comparison_operators.png","x":-2040,"y":-107,"width":400,"height":230},
-		{"id":"c50d516ba79f4696","type":"file","file":"csharp_notes/img/arithmetic_operators.png","x":-2040,"y":-440,"width":400,"height":250},
-		{
-			"id":"e6af915f1ec25332",
-			"type":"text",
-			"text":"If you want to do newlines and format the string how you like over multiple lines, the @ works.\n\n```c#\nstring message = @\"Have a look in this directory:\nc:\\projects\\example\";\n```\n",
-			"styleAttributes":{},
-			"x":-2228,
-			"y":3820,
-			"width":480,
-			"height":164
-		},
-		{
-			"id":"daf654d841dc0079",
-			"type":"text",
-			"text":"Arrays",
-			"styleAttributes":{},
-			"x":-2714,
-			"y":3000,
-			"width":91,
-			"height":60,
-			"color":"6"
-		},
-		{
-			"id":"9209c251df6d9b96",
-			"type":"text",
-			"text":"```c#\nint[] numbers = new int[3] {1, 2 3};\n```",
-			"styleAttributes":{},
-			"x":-2654,
-			"y":3185,
-			"width":374,
-			"height":87
-		},
-		{
-			"id":"45b96481b24f745e",
-			"type":"text",
-			"text":"- .NET is a framework for building apps on Windows\n- .NET is not limited to C#. Common programming languages using it include:\n\t- F#\n\t- Visual Basic",
-			"styleAttributes":{},
-			"x":82,
-			"y":-654,
-			"width":212,
-			"height":284,
-			"color":"4"
-		},
-		{
-			"id":"3381bd689b386571",
-			"type":"text",
-			"text":"Non-Primitive",
-			"styleAttributes":{},
-			"x":-1866,
-			"y":1476,
-			"width":145,
-			"height":60,
-			"color":"2"
-		},
+		{"id":"6bf684b38f4bdf90","type":"file","file":"img/assignment-operators.png","x":-2040,"y":235,"width":400,"height":196},
+		{"id":"ccbf281a88bd5571","type":"file","file":"img/logical-operators.png","x":-2040,"y":515,"width":400,"height":228},
 		{
 			"id":"239c56beff27958d",
 			"type":"text",
@@ -358,6 +84,51 @@
 			"width":90,
 			"height":60
 		},
+		{"id":"48de27fe2f28fe09","type":"file","file":"img/bitwise-operators.png","x":-2040,"y":791,"width":400,"height":231},
+		{"id":"25a86560c6b60e8f","type":"file","file":"img/comparison-operators.png","x":-2040,"y":-107,"width":400,"height":230},
+		{
+			"id":"365936f3343fc0ef",
+			"type":"text",
+			"text":"```c#\nstring name = string.Format(\"{0} {1}\", firstName, lastName)\n```",
+			"styleAttributes":{},
+			"x":-1749,
+			"y":3436,
+			"width":562,
+			"height":84
+		},
+		{
+			"id":"3381bd689b386571",
+			"type":"text",
+			"text":"Non-Primitive",
+			"styleAttributes":{},
+			"x":-1866,
+			"y":1476,
+			"width":145,
+			"height":60,
+			"color":"2"
+		},
+		{"id":"c50d516ba79f4696","type":"file","file":"img/arithmetic-operators.png","x":-2040,"y":-440,"width":400,"height":250},
+		{
+			"id":"e6af915f1ec25332",
+			"type":"text",
+			"text":"If you want to do newlines and format the string how you like over multiple lines, the @ works.\n\n```c#\nstring message = @\"Have a look in this directory:\nc:\\projects\\example\";\n```\n",
+			"styleAttributes":{},
+			"x":-2228,
+			"y":3820,
+			"width":480,
+			"height":164
+		},
+		{
+			"id":"daf654d841dc0079",
+			"type":"text",
+			"text":"Arrays",
+			"styleAttributes":{},
+			"x":-2714,
+			"y":3000,
+			"width":94,
+			"height":60,
+			"color":"6"
+		},
 		{
 			"id":"5d231cec8c3ef65b",
 			"type":"text",
@@ -380,24 +151,24 @@
 			"color":"6"
 		},
 		{
-			"id":"365936f3343fc0ef",
+			"id":"18517acfba40ebca",
 			"type":"text",
-			"text":"```c#\nstring name = string.Format(\"{0} {1}\", firstName, lastName)\n```",
+			"text":"```c#\nusing System;\n\nnamespace HelloWorld\n{\n  public enum ShippingMethod\n  {\n    RegularAirMail = 9,\n    RegisteredAirMail = 1,\n    Express = 3\n  }\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      string methodName = \"Express\";\n      ShippingMethod method = (ShippingMethod) Enum.Parse(typeof(ShippingMethod), methodName);\n      Console.WriteLine((int)method);\n    }\n  }\n}\n```",
 			"styleAttributes":{},
-			"x":-1749,
-			"y":3436,
-			"width":562,
-			"height":84
+			"x":-2838,
+			"y":4264,
+			"width":850,
+			"height":562
 		},
 		{
-			"id":"1b9572714cf81b2c",
+			"id":"e1da67a4ca4a40cf",
 			"type":"text",
-			"text":"```c#\nint[] numbers = new int[3];\n\nnumbers[0] = 1;\nnumbers[1] = 2;\nnumbers[2] = 3;\n```",
+			"text":"If you have the constant name and you want to find the value, this is how you do it.",
 			"styleAttributes":{},
-			"x":-3014,
-			"y":3185,
-			"width":300,
-			"height":202
+			"x":-2543,
+			"y":4939,
+			"width":260,
+			"height":84
 		},
 		{
 			"id":"824a9aa463874c18",
@@ -451,164 +222,398 @@
 			"color":"6"
 		},
 		{
-			"id":"18517acfba40ebca",
+			"id":"b578596ee2c23ead",
 			"type":"text",
-			"text":"```c#\nusing System;\n\nnamespace HelloWorld\n{\n  public enum ShippingMethod\n  {\n    RegularAirMail = 9,\n    RegisteredAirMail = 1,\n    Express = 3\n  }\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      string methodName = \"Express\";\n      ShippingMethod method = (ShippingMethod) Enum.Parse(typeof(ShippingMethod), methodName);\n      Console.WriteLine((int)method);\n    }\n  }\n}\n```",
+			"text":"This makes it so that C# code is compiled to IL (Intermediate Language) Code, which then gets compiled to Native Code that's hardware specific.",
 			"styleAttributes":{},
-			"x":-2838,
-			"y":4264,
-			"width":850,
-			"height":562
+			"x":1040,
+			"y":-64,
+			"width":277,
+			"height":145
 		},
 		{
-			"id":"e1da67a4ca4a40cf",
+			"id":"c977dc7833748696",
 			"type":"text",
-			"text":"If you have the constant name and you want to find the value, this is how you do it.",
+			"text":"This is called JIT (Just in time) Compilation",
 			"styleAttributes":{},
-			"x":-2543,
-			"y":4939,
-			"width":260,
-			"height":84
+			"x":1441,
+			"y":-22,
+			"width":164,
+			"height":60
 		},
 		{
-			"id":"2a28e47c7ea8654e",
+			"id":"77fa633ec5d53dc0",
 			"type":"text",
-			"text":"Class",
+			"text":"Methods",
 			"styleAttributes":{},
-			"x":3928,
-			"y":-220,
-			"width":82,
+			"x":1060,
+			"y":191,
+			"width":84,
+			"height":60
+		},
+		{
+			"id":"4cb682761ef8645c",
+			"type":"text",
+			"text":"Attributes",
+			"styleAttributes":{},
+			"x":1060,
+			"y":380,
+			"width":89,
+			"height":60
+		},
+		{
+			"id":"1c2c7d304ad749d0",
+			"type":"text",
+			"text":"Example",
+			"styleAttributes":{},
+			"x":1900,
+			"y":296,
+			"width":111,
+			"height":60
+		},
+		{
+			"id":"a7f8af5d7eac9c46",
+			"type":"text",
+			"text":"The value is copied from variable a to b. A change to one, does not impact the other",
+			"styleAttributes":{},
+			"x":2569,
+			"y":2240,
+			"width":203,
+			"height":115
+		},
+		{
+			"id":"5204ca83b1d434df",
+			"type":"text",
+			"text":"Namespaces",
+			"styleAttributes":{},
+			"x":875,
+			"y":-400,
+			"width":142,
+			"height":60
+		},
+		{
+			"id":"557d19ce2a356575",
+			"type":"text",
+			"text":"Classes",
+			"styleAttributes":{},
+			"x":875,
+			"y":-500,
+			"width":102,
+			"height":60
+		},
+		{
+			"id":"2c4c4322496541db",
+			"type":"text",
+			"text":"Assemblies",
+			"styleAttributes":{},
+			"x":875,
+			"y":-300,
+			"width":131,
+			"height":60
+		},
+		{
+			"id":"af6ae4188ef4ac97",
+			"type":"text",
+			"text":"Compiles the EXE/DLL",
+			"styleAttributes":{},
+			"x":1317,
+			"y":-300,
+			"width":137,
+			"height":60
+		},
+		{
+			"id":"786015e2f3314e1d",
+			"type":"text",
+			"text":"State of the application",
+			"styleAttributes":{},
+			"x":1504,
+			"y":380,
+			"width":133,
+			"height":60
+		},
+		{
+			"id":"5544cee33cc1e671",
+			"type":"text",
+			"text":"Have behavior - they execute code - they do things for us",
+			"styleAttributes":{},
+			"x":1436,
+			"y":169,
+			"width":201,
+			"height":103
+		},
+		{"id":"c3faaf645eaed5de","type":"file","file":"img/class-examples.png","x":2280,"y":237,"width":400,"height":179},
+		{
+			"id":"a63ac3f22e578586",
+			"type":"text",
+			"text":"10",
+			"styleAttributes":{"textAlign":"center","border":"invisible"},
+			"x":2628,
+			"y":1750,
+			"width":85,
 			"height":60,
-			"color":"#000000"
+			"color":"5"
 		},
 		{
-			"id":"150f08c986d2e052",
+			"id":"513fd522a86c190d",
 			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":4030,
-			"y":-220,
-			"width":82,
+			"text":"10",
+			"styleAttributes":{"textAlign":"center","border":"invisible"},
+			"x":2628,
+			"y":2000,
+			"width":85,
 			"height":60,
-			"color":"#000000"
+			"color":"3"
 		},
 		{
-			"id":"ca84e0f6f993c802",
+			"id":"b2f63472b097e336",
+			"type":"text",
+			"text":"# Types\n",
+			"styleAttributes":{},
+			"x":840,
+			"y":1476,
+			"width":114,
+			"height":60
+		},
+		{
+			"id":"ad374ce177403839",
+			"type":"text",
+			"text":"**C# vs .NET**  \n\nC# is a programming language, while .NET is a framework. It consists of a run-time environment (CLR) and a class library that we use for building applications.\n\n**CLR**  \n\nWhen you compile an application, C# compiler compiles your code to IL (Intermediate Language) code. IL code is platform agnostics, which makes it possible to a take a C# program on a different computer with different hardware architecture and operating system and run it. For this to happen, we need CLR. When you run a C# application, CLR compiles the IL code into the native machine code for the computer on which it is running. This process is called Just-in-time Compilation (JIT).\n\n**Architecture of .NET Applications**  \n\nIn terms of architecture, an application written with C# consists of building blocks called classes. A class is a container for data (attributes) and methods (functions). Attributes represent the state of the application. Methods include code. They have logic. That's where we implement our algorithms and write code.\n\nA namespace is a container for related classes. So as your application grows in size, you may want to group the related classes into various namespaces for better maintainability.\n\nAs the number of classes and namespaces even grow further, you may want to physically separate related namespaces into separate assemblies. An assembly is a file (DLL or EXE) that contains one or more namespaces and classes. An EXE file represents a program that can be executed. A DLL is a file that includes code that can be re-used across different programs.\n\nIn the next section, you'll learn about basics of the C# language, including variables, constants, type conversion and operators.",
+			"styleAttributes":{},
+			"x":521,
+			"y":508,
+			"width":1000,
+			"height":594
+		},
+		{
+			"id":"1f1525450473a0f7",
+			"type":"text",
+			"text":"Components",
+			"styleAttributes":{},
+			"x":486,
+			"y":-22,
+			"width":143,
+			"height":60
+		},
+		{
+			"id":"2cb24803a32ae6b1",
+			"type":"text",
+			"text":"Class Library (For building apps)",
+			"styleAttributes":{},
+			"x":415,
+			"y":115,
+			"width":286,
+			"height":55
+		},
+		{
+			"id":"23d1a9a9abe24838",
 			"type":"text",
 			"text":"Class",
 			"styleAttributes":{},
-			"x":3928,
-			"y":-380,
-			"width":82,
+			"x":770,
+			"y":140,
+			"width":85,
+			"height":60
+		},
+		{
+			"id":"4e91ab8182bec5bc",
+			"type":"text",
+			"text":"Container that has some data (Attributes) and functions (Methods",
+			"styleAttributes":{},
+			"x":656,
+			"y":282,
+			"width":313,
+			"height":85,
+			"color":"4"
+		},
+		{
+			"id":"5770762ba92506dc",
+			"type":"text",
+			"text":"CLR (Common Language Run-time)",
+			"styleAttributes":{},
+			"x":713,
+			"y":-36,
+			"width":199,
+			"height":88
+		},
+		{
+			"id":"0a8c11081c6177a4",
+			"type":"text",
+			"text":"Architecture of .NET Apps",
+			"styleAttributes":{},
+			"x":487,
+			"y":-400,
+			"width":142,
+			"height":60
+		},
+		{
+			"id":"60ec31aee12d3130",
+			"type":"text",
+			"text":"```c#\nusing System;\n\nnamespace HelloWorld\n{\n  public class Person\n  {\n    public int Age;\n  }\n  class Program\n  {\n    static void Main(string[] args)\n    {\n        Person person = new Person() {Age = 20};\n        Console.WriteLine(\"Age before applying AddAge(): {0}\", person.Age);\n        AddAge(person);\n        Console.WriteLine(\"Age after applying AddAge(): {0}\", person.Age);\n    }\n    public static void AddAge(Person person)\n    {\n      person.Age += 10;\n    }\n  }\n}\n```",
+			"styleAttributes":{},
+			"x":-640,
+			"y":2450,
+			"width":694,
+			"height":610
+		},
+		{
+			"id":"53e9f03e128abcd6",
+			"type":"text",
+			"text":"Custom classes",
+			"styleAttributes":{},
+			"x":720,
+			"y":3315,
+			"width":153,
 			"height":60,
-			"color":"#000000"
+			"color":"6"
 		},
 		{
-			"id":"a98c4f9e9eae27de",
+			"id":"d72bed74b1ebda59",
 			"type":"text",
-			"text":"Class",
+			"text":"Structures",
 			"styleAttributes":{},
-			"x":4030,
-			"y":-460,
-			"width":82,
+			"x":954,
+			"y":3280,
+			"width":117,
 			"height":60,
-			"color":"#000000"
+			"color":"2"
 		},
 		{
-			"id":"99c2304aa409db02",
+			"id":"585cd37d2f44bd63",
 			"type":"text",
-			"text":"Class",
+			"text":"Classes",
 			"styleAttributes":{},
-			"x":4030,
-			"y":-380,
-			"width":82,
+			"x":748,
+			"y":3155,
+			"width":97,
 			"height":60,
-			"color":"#000000"
+			"color":"2"
 		},
 		{
-			"id":"4f7f6cbc6dc49d4f",
+			"id":"d42b91648fd5288a",
 			"type":"text",
-			"text":"Class",
+			"text":"Custom structures",
 			"styleAttributes":{},
-			"x":3928,
-			"y":-460,
-			"width":82,
+			"x":1220,
+			"y":3440,
+			"width":175,
 			"height":60,
-			"color":"#000000"
+			"color":"6"
 		},
 		{
-			"id":"26d0eec2e851004f",
+			"id":"f722caaab59ce4a7",
 			"type":"text",
-			"text":"Class",
+			"text":"```c#\nusing System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      unsafe{\n        int number = 1;\n        int *n = &number;\n        string strcptr = Convert.ToString((long)n, 16);\n        Console.WriteLine(\"Before incrementing\\n---\\nnumber in Main(): {0}\\nmemory location: {1}\\n---\", number, strcptr);\n        Increment(number);\n        Console.WriteLine(\"number in Main(): {0}\\nmemory location: {1}\\n---\", number, strcptr);\n      }\n    }\n    public static void Increment(int number)\n    {\n      unsafe{\n        int *n = &number;\n        string strcptr = Convert.ToString((long)n, 16);\n        Console.WriteLine(\"number in Increment(): {0}\\nmemory location: {1}\\n---\", number, strcptr);\n        number += 10;\n        Console.WriteLine(\"After incrementing\\n---\\nnumber in Increment(): {0}\\nmemory location: {1}\\n---\", number, strcptr);\n      }\n    }\n  }\n}\n```",
 			"styleAttributes":{},
-			"x":3826,
-			"y":-460,
-			"width":82,
+			"x":1308,
+			"y":2429,
+			"width":1104,
+			"height":754
+		},
+		{
+			"id":"b3fccd8ed8574e6c",
+			"type":"text",
+			"text":"Reference Types",
+			"styleAttributes":{},
+			"x":717,
+			"y":1860,
+			"width":160,
 			"height":60,
-			"color":"#000000"
+			"color":"3"
 		},
 		{
-			"id":"f8b03705c7b4ca47",
+			"id":"22f6022163c6a194",
 			"type":"text",
-			"text":"Class",
+			"text":"Value Types",
 			"styleAttributes":{},
-			"x":4446,
-			"y":-640,
-			"width":82,
+			"x":948,
+			"y":1860,
+			"width":129,
 			"height":60,
-			"color":"#000000"
+			"color":"3"
 		},
 		{
-			"id":"ebedc5fce1ad65f0",
+			"id":"0bb1da3026dff85a",
 			"type":"text",
-			"text":"Class",
+			"text":"0x00416A",
+			"styleAttributes":{"textAlign":"center","border":"invisible"},
+			"x":-927,
+			"y":1690,
+			"width":116,
+			"height":60
+		},
+		{
+			"id":"d3597461daf43c0c",
+			"type":"text",
+			"text":"1, 2, 3",
+			"styleAttributes":{"textAlign":"center","border":"invisible"},
+			"x":-911,
+			"y":1750,
+			"width":85,
+			"height":60,
+			"color":"5"
+		},
+		{
+			"id":"0b4195da84b2eb6e",
+			"type":"text",
+			"text":"C#",
 			"styleAttributes":{},
-			"x":4446,
+			"x":-120,
+			"y":-160,
+			"width":67,
+			"height":60
+		},
+		{
+			"id":"5c87b32b7c79b2a6",
+			"type":"text",
+			"text":".NET",
+			"styleAttributes":{},
+			"x":140,
+			"y":-160,
+			"width":81,
+			"height":60
+		},
+		{"id":"809e0213b55f8cde","type":"file","file":"links.md","x":-800,"y":-312,"width":400,"height":365},
+		{
+			"id":"586db2abd17d3c97",
+			"type":"text",
+			"text":"C# Is the programming language",
+			"styleAttributes":{},
+			"x":-235,
+			"y":-430,
+			"width":297,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"45b96481b24f745e",
+			"type":"text",
+			"text":"- .NET is a framework for building apps on Windows\n- .NET is not limited to C#. Common programming languages using it include:\n\t- F#\n\t- Visual Basic",
+			"styleAttributes":{},
+			"x":-11,
 			"y":-720,
-			"width":82,
-			"height":60,
-			"color":"#000000"
+			"width":384,
+			"height":188,
+			"color":"4"
 		},
+		{"id":"500f1fe5eda52ab6","type":"file","file":"img/non-primitive-types.png","x":46,"y":805,"width":200,"height":169},
 		{
-			"id":"815856a8e012017b",
+			"id":"65e2f2eac821e9fd",
 			"type":"text",
 			"text":"Class",
 			"styleAttributes":{},
 			"x":3928,
-			"y":-720,
+			"y":-140,
 			"width":82,
 			"height":60,
 			"color":"#000000"
 		},
 		{
-			"id":"07eee0763a65c626",
+			"id":"3e1417d6eed2ce4b",
 			"type":"text",
 			"text":"Class",
 			"styleAttributes":{},
 			"x":4030,
-			"y":-720,
-			"width":82,
-			"height":60,
-			"color":"#000000"
-		},
-		{
-			"id":"6e6830ceb4c558b7",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":3928,
-			"y":-640,
-			"width":82,
-			"height":60,
-			"color":"#000000"
-		},
-		{
-			"id":"253a484855053dfb",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":4030,
-			"y":-640,
+			"y":-140,
 			"width":82,
 			"height":60,
 			"color":"#000000"
@@ -625,59 +630,66 @@
 			"color":"#000000"
 		},
 		{
-			"id":"0292d3bfe0d02317",
+			"id":"f0d9dfc4f6b2774a",
 			"type":"text",
 			"text":"Class",
 			"styleAttributes":{},
 			"x":3826,
-			"y":-380,
-			"width":82,
-			"height":60,
-			"color":"#000000"
-		},
-		{
-			"id":"360ff320c262e4c5",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":4548,
-			"y":-220,
-			"width":82,
-			"height":60,
-			"color":"#000000"
-		},
-		{
-			"id":"1bd123a9acc8a61a",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":4650,
 			"y":-140,
 			"width":82,
 			"height":60,
 			"color":"#000000"
 		},
 		{
-			"id":"2a08ed181b616d1c",
+			"id":"1fa85cc150a38bde",
 			"type":"text",
-			"text":"Class",
+			"text":"As the number of classes grows, we use Namespaces to organise these classes.",
 			"styleAttributes":{},
-			"x":4650,
-			"y":-220,
-			"width":82,
-			"height":60,
-			"color":"#000000"
+			"x":2900,
+			"y":284,
+			"width":260,
+			"height":85
 		},
 		{
-			"id":"90e1f276066ec670",
+			"id":"ce395be594597934",
 			"type":"text",
-			"text":"Class",
+			"text":"As the namespaces grow, we need a different way of partitioning an application - that's where an Assembly is (DLL or EXE)",
 			"styleAttributes":{},
-			"x":4548,
-			"y":-140,
-			"width":82,
+			"x":3696,
+			"y":254,
+			"width":260,
+			"height":145
+		},
+		{
+			"id":"4b0f091f14d76895",
+			"type":"text",
+			"text":"Assembly",
+			"styleAttributes":{},
+			"x":4160,
+			"y":297,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"895af25396979b74",
+			"type":"text",
+			"text":"C# Operators",
+			"styleAttributes":{},
+			"x":-1140,
+			"y":303,
+			"width":147,
+			"height":60
+		},
+		{
+			"id":"203d64cec2322b8b",
+			"type":"text",
+			"text":"Container for related classes",
+			"styleAttributes":{},
+			"x":2975,
+			"y":60,
+			"width":260,
 			"height":60,
-			"color":"#000000"
+			"color":"4"
 		},
 		{
 			"id":"6a74070b73535ce0",
@@ -686,39 +698,6 @@
 			"styleAttributes":{},
 			"x":4548,
 			"y":-460,
-			"width":82,
-			"height":60,
-			"color":"#000000"
-		},
-		{
-			"id":"a816ab1d67e03841",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":3826,
-			"y":-720,
-			"width":82,
-			"height":60,
-			"color":"#000000"
-		},
-		{
-			"id":"2fdea003d70103ff",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":3826,
-			"y":-640,
-			"width":82,
-			"height":60,
-			"color":"#000000"
-		},
-		{
-			"id":"38197737857c97cb",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":4548,
-			"y":-380,
 			"width":82,
 			"height":60,
 			"color":"#000000"
@@ -790,390 +769,6 @@
 			"color":"#000000"
 		},
 		{
-			"id":"dc6fc2dad10928c5",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":4446,
-			"y":-460,
-			"width":82,
-			"height":60,
-			"color":"#000000"
-		},
-		{
-			"id":"53e9f03e128abcd6",
-			"type":"text",
-			"text":"Custom classes",
-			"styleAttributes":{},
-			"x":720,
-			"y":3315,
-			"width":153,
-			"height":60,
-			"color":"6"
-		},
-		{
-			"id":"f0d9dfc4f6b2774a",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":3826,
-			"y":-140,
-			"width":82,
-			"height":60,
-			"color":"#000000"
-		},
-		{
-			"id":"ce395be594597934",
-			"type":"text",
-			"text":"As the namespaces grow, we need a different way of partitioning an application - that's where an Assembly is (DLL or EXE)",
-			"styleAttributes":{},
-			"x":3700,
-			"y":230,
-			"width":260,
-			"height":145
-		},
-		{
-			"id":"65e2f2eac821e9fd",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":3928,
-			"y":-140,
-			"width":82,
-			"height":60,
-			"color":"#000000"
-		},
-		{
-			"id":"3e1417d6eed2ce4b",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":4030,
-			"y":-140,
-			"width":82,
-			"height":60,
-			"color":"#000000"
-		},
-		{
-			"id":"4b0f091f14d76895",
-			"type":"text",
-			"text":"Assembly",
-			"styleAttributes":{},
-			"x":4180,
-			"y":273,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"69f3ab5921218c6c",
-			"type":"text",
-			"text":"This is because it's the default datatype used by the C# compiler when using real numbers. So you need to specify the `f` or `m`. (But i don't really get why writing the data type before that doesn't work?)",
-			"styleAttributes":{},
-			"x":4030,
-			"y":1984,
-			"width":260,
-			"height":226
-		},
-		{"id":"b8601501d5ca2c8e","type":"file","file":"csharp_notes/img/specifying_real_numbers.png","x":3430,"y":1416,"width":400,"height":181},
-		{
-			"id":"6d54a77a1310f0c5",
-			"type":"text",
-			"text":"This can get tricky - if you want to assign an actual float to `float number`, you need to write the `f` after the value, otherwise it's considered a double, Same for decimal, but with an `m`",
-			"styleAttributes":{},
-			"x":3960,
-			"y":1449,
-			"width":400,
-			"height":115
-		},
-		{"id":"bb8d4428d3a6d94b","type":"file","file":"csharp_notes/img/primitive_types.png","x":2890,"y":1397,"width":400,"height":218},
-		{
-			"id":"af3e755db5ad6d85",
-			"type":"text",
-			"text":"\n```c#\nusing System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      int a = 10;\n      int b = a;\n      b++;\n      Console.WriteLine(\"a: {0}, b: {1}\", a, b);\n    }\n  }\n}\n```",
-			"styleAttributes":{},
-			"x":1860,
-			"y":1682,
-			"width":472,
-			"height":418
-		},
-		{
-			"id":"5ae075cad0ce10de",
-			"type":"text",
-			"text":"- Allocated on stack\n- Memory allocation done automatically\n- Immediately removed when out of scope",
-			"styleAttributes":{},
-			"x":1160,
-			"y":1843,
-			"width":361,
-			"height":94
-		},
-		{
-			"id":"9fb3d6b3f6be24b9",
-			"type":"text",
-			"text":"```c#\nusing System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      unsafe{\n        int number = 1;\n        int *n = &number;\n        string strcptr = Convert.ToString((long)n, 16);\n        Console.WriteLine(strcptr);\n      }\n    }\n  }\n}\n```",
-			"styleAttributes":{},
-			"x":5350,
-			"y":1000,
-			"width":530,
-			"height":490
-		},
-		{
-			"id":"2c26845f70e848d1",
-			"type":"text",
-			"text":"Put the code with pointers into an `unsafe{}` block",
-			"styleAttributes":{},
-			"x":5300,
-			"y":670,
-			"width":260,
-			"height":70
-		},
-		{
-			"id":"97b1e0537b3637da",
-			"type":"text",
-			"text":"# Working with pointers",
-			"styleAttributes":{},
-			"x":4600,
-			"y":740,
-			"width":300,
-			"height":100
-		},
-		{
-			"id":"ce06098b801da3ee",
-			"type":"text",
-			"text":"Go into the `.csproj` file and add `    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>\n`",
-			"styleAttributes":{},
-			"x":5700,
-			"y":670,
-			"width":650,
-			"height":70
-		},
-		{
-			"id":"a63ac3f22e578586",
-			"type":"text",
-			"text":"10",
-			"styleAttributes":{"textAlign":"center","border":"invisible"},
-			"x":2628,
-			"y":1750,
-			"width":85,
-			"height":60,
-			"color":"5"
-		},
-		{
-			"id":"513fd522a86c190d",
-			"type":"text",
-			"text":"10",
-			"styleAttributes":{"textAlign":"center","border":"invisible"},
-			"x":2628,
-			"y":2000,
-			"width":85,
-			"height":60,
-			"color":"3"
-		},
-		{
-			"id":"d72bed74b1ebda59",
-			"type":"text",
-			"text":"Structures",
-			"styleAttributes":{},
-			"x":954,
-			"y":3280,
-			"width":117,
-			"height":60,
-			"color":"2"
-		},
-		{
-			"id":"585cd37d2f44bd63",
-			"type":"text",
-			"text":"Classes",
-			"styleAttributes":{},
-			"x":748,
-			"y":3155,
-			"width":97,
-			"height":60,
-			"color":"2"
-		},
-		{
-			"id":"b0e87901537ea325",
-			"type":"text",
-			"text":"# Conditional Statements",
-			"styleAttributes":{},
-			"x":5540,
-			"y":2520,
-			"width":323,
-			"height":60
-		},
-		{
-			"id":"d7c40a2350493cad",
-			"type":"text",
-			"text":"If / Else",
-			"styleAttributes":{},
-			"x":6120,
-			"y":2460,
-			"width":98,
-			"height":60
-		},
-		{
-			"id":"d897e3b188062a3e",
-			"type":"text",
-			"text":"a",
-			"styleAttributes":{"textAlign":"center","border":"invisible"},
-			"x":2640,
-			"y":1690,
-			"width":60,
-			"height":60
-		},
-		{
-			"id":"da6900e5d0900a3c",
-			"type":"text",
-			"text":"b",
-			"styleAttributes":{"textAlign":"center","border":"invisible"},
-			"x":2640,
-			"y":1940,
-			"width":60,
-			"height":60
-		},
-		{
-			"id":"a7f8af5d7eac9c46",
-			"type":"text",
-			"text":"The value is copied from variable a to b. A change to one, does not impact the other",
-			"styleAttributes":{},
-			"x":2569,
-			"y":2240,
-			"width":203,
-			"height":115
-		},
-		{
-			"id":"ad374ce177403839",
-			"type":"text",
-			"text":"**C# vs .NET**  \n\nC# is a programming language, while .NET is a framework. It consists of a run-time environment (CLR) and a class library that we use for building applications.\n\n**CLR**  \n\nWhen you compile an application, C# compiler compiles your code to IL (Intermediate Language) code. IL code is platform agnostics, which makes it possible to a take a C# program on a different computer with different hardware architecture and operating system and run it. For this to happen, we need CLR. When you run a C# application, CLR compiles the IL code into the native machine code for the computer on which it is running. This process is called Just-in-time Compilation (JIT).\n\n**Architecture of .NET Applications**  \n\nIn terms of architecture, an application written with C# consists of building blocks called classes. A class is a container for data (attributes) and methods (functions). Attributes represent the state of the application. Methods include code. They have logic. That's where we implement our algorithms and write code.\n\nA namespace is a container for related classes. So as your application grows in size, you may want to group the related classes into various namespaces for better maintainability.\n\nAs the number of classes and namespaces even grow further, you may want to physically separate related namespaces into separate assemblies. An assembly is a file (DLL or EXE) that contains one or more namespaces and classes. An EXE file represents a program that can be executed. A DLL is a file that includes code that can be re-used across different programs.\n\nIn the next section, you'll learn about basics of the C# language, including variables, constants, type conversion and operators.",
-			"styleAttributes":{},
-			"x":521,
-			"y":508,
-			"width":1000,
-			"height":594
-		},
-		{
-			"id":"d42b91648fd5288a",
-			"type":"text",
-			"text":"Custom structures",
-			"styleAttributes":{},
-			"x":1220,
-			"y":3440,
-			"width":175,
-			"height":60,
-			"color":"6"
-		},
-		{
-			"id":"f722caaab59ce4a7",
-			"type":"text",
-			"text":"```c#\nusing System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      unsafe{\n        int number = 1;\n        int *n = &number;\n        string strcptr = Convert.ToString((long)n, 16);\n        Console.WriteLine(\"Before incrementing\\n---\\nnumber in Main(): {0}\\nmemory location: {1}\\n---\", number, strcptr);\n        Increment(number);\n        Console.WriteLine(\"number in Main(): {0}\\nmemory location: {1}\\n---\", number, strcptr);\n      }\n    }\n    public static void Increment(int number)\n    {\n      unsafe{\n        int *n = &number;\n        string strcptr = Convert.ToString((long)n, 16);\n        Console.WriteLine(\"number in Increment(): {0}\\nmemory location: {1}\\n---\", number, strcptr);\n        number += 10;\n        Console.WriteLine(\"After incrementing\\n---\\nnumber in Increment(): {0}\\nmemory location: {1}\\n---\", number, strcptr);\n      }\n    }\n  }\n}\n```",
-			"styleAttributes":{},
-			"x":1308,
-			"y":2429,
-			"width":1104,
-			"height":754
-		},
-		{
-			"id":"77fa633ec5d53dc0",
-			"type":"text",
-			"text":"Methods",
-			"styleAttributes":{},
-			"x":1060,
-			"y":222,
-			"width":109,
-			"height":60
-		},
-		{
-			"id":"5544cee33cc1e671",
-			"type":"text",
-			"text":"Have behavior - they execute code - they do things for us",
-			"styleAttributes":{},
-			"x":1504,
-			"y":222,
-			"width":252,
-			"height":60
-		},
-		{
-			"id":"4cb682761ef8645c",
-			"type":"text",
-			"text":"Attributes",
-			"styleAttributes":{},
-			"x":1060,
-			"y":354,
-			"width":116,
-			"height":60
-		},
-		{
-			"id":"1fa85cc150a38bde",
-			"type":"text",
-			"text":"As the number of classes grows, we use Namespaces to organise these classes.",
-			"styleAttributes":{},
-			"x":2900,
-			"y":260,
-			"width":260,
-			"height":85
-		},
-		{
-			"id":"203d64cec2322b8b",
-			"type":"text",
-			"text":"Container for related classes",
-			"styleAttributes":{},
-			"x":2975,
-			"y":60,
-			"width":260,
-			"height":60,
-			"color":"4"
-		},
-		{"id":"c3faaf645eaed5de","type":"file","file":"csharp_notes/img/class_examples.png","x":2320,"y":206,"width":400,"height":179},
-		{
-			"id":"1c2c7d304ad749d0",
-			"type":"text",
-			"text":"Example",
-			"styleAttributes":{},
-			"x":1880,
-			"y":265,
-			"width":105,
-			"height":60
-		},
-		{
-			"id":"c946dd4d098c9deb",
-			"type":"text",
-			"text":"Namespace",
-			"styleAttributes":{},
-			"x":3300,
-			"y":273,
-			"width":129,
-			"height":60
-		},
-		{
-			"id":"c977dc7833748696",
-			"type":"text",
-			"text":"This is called JIT (Just in time) Compilation",
-			"styleAttributes":{},
-			"x":1440,
-			"y":-79,
-			"width":194,
-			"height":60
-		},
-		{
-			"id":"af6ae4188ef4ac97",
-			"type":"text",
-			"text":"Compiles the EXE/DLL",
-			"styleAttributes":{},
-			"x":1440,
-			"y":-277,
-			"width":202,
-			"height":60
-		},
-		{
-			"id":"786015e2f3314e1d",
-			"type":"text",
-			"text":"State of the application",
-			"styleAttributes":{},
-			"x":1504,
-			"y":354,
-			"width":210,
-			"height":60
-		},
-		{
 			"id":"c0ae6fb16de339e6",
 			"type":"text",
 			"text":"Examples of what you may need namespaces for:\n- Security\n- Working with data\n- Graphics/images",
@@ -1184,25 +779,14 @@
 			"height":174
 		},
 		{
-			"id":"b578596ee2c23ead",
+			"id":"c946dd4d098c9deb",
 			"type":"text",
-			"text":"This makes it so that C# code is compiled to IL (Intermediate Language) Code, which then gets compiled to Native Code that's hardware specific.",
+			"text":"Namespace",
 			"styleAttributes":{},
-			"x":1060,
-			"y":-137,
-			"width":222,
-			"height":175
-		},
-		{
-			"id":"bf03058d764bc94f",
-			"type":"text",
-			"text":"Class",
-			"styleAttributes":{},
-			"x":4446,
-			"y":-380,
-			"width":82,
-			"height":60,
-			"color":"#000000"
+			"x":3300,
+			"y":297,
+			"width":129,
+			"height":60
 		},
 		{
 			"id":"708ddcc2edfb383a",
@@ -1227,42 +811,365 @@
 			"color":"#000000"
 		},
 		{
-			"id":"c879abc1de10336e",
+			"id":"360ff320c262e4c5",
 			"type":"text",
-			"text":"```c#\nif (condition)\n{\n\tsomeStatements\n}\nelse if (condition)\n{\n\tsomeStatements\n}\nelse\n{\n\tsomeStatements\n}\n```",
+			"text":"Class",
 			"styleAttributes":{},
-			"x":6520,
-			"y":2040,
-			"width":300,
-			"height":346
+			"x":4548,
+			"y":-220,
+			"width":82,
+			"height":60,
+			"color":"#000000"
 		},
 		{
-			"id":"0eb4ad6357aa07b3",
+			"id":"2a08ed181b616d1c",
 			"type":"text",
-			"text":"Conditional Operators",
+			"text":"Class",
 			"styleAttributes":{},
-			"x":6089,
-			"y":2920,
-			"width":203,
+			"x":4650,
+			"y":-220,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"1bd123a9acc8a61a",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":4650,
+			"y":-140,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"90e1f276066ec670",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":4548,
+			"y":-140,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"38197737857c97cb",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":4548,
+			"y":-380,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"dc6fc2dad10928c5",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":4446,
+			"y":-460,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"bf03058d764bc94f",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":4446,
+			"y":-380,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"2a28e47c7ea8654e",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":3928,
+			"y":-220,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"150f08c986d2e052",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":4030,
+			"y":-220,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"ca84e0f6f993c802",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":3928,
+			"y":-380,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"a98c4f9e9eae27de",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":4030,
+			"y":-460,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"99c2304aa409db02",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":4030,
+			"y":-380,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"f8b03705c7b4ca47",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":4446,
+			"y":-640,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"ebedc5fce1ad65f0",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":4446,
+			"y":-720,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"4f7f6cbc6dc49d4f",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":3928,
+			"y":-460,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"815856a8e012017b",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":3928,
+			"y":-720,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"07eee0763a65c626",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":4030,
+			"y":-720,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"6e6830ceb4c558b7",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":3928,
+			"y":-640,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"253a484855053dfb",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":4030,
+			"y":-640,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"a816ab1d67e03841",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":3826,
+			"y":-720,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"26d0eec2e851004f",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":3826,
+			"y":-460,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"0292d3bfe0d02317",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":3826,
+			"y":-380,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"2fdea003d70103ff",
+			"type":"text",
+			"text":"Class",
+			"styleAttributes":{},
+			"x":3826,
+			"y":-640,
+			"width":82,
+			"height":60,
+			"color":"#000000"
+		},
+		{
+			"id":"11f1ed964d881a01",
+			"type":"text",
+			"text":"```\nfor (var i = 0; i < 10; i++)\n{\n\t...\n}\n```\n",
+			"styleAttributes":{},
+			"x":8000,
+			"y":2030,
+			"width":314,
+			"height":177
+		},
+		{
+			"id":"a44e1519eca2fae7",
+			"type":"text",
+			"text":"```\nforeach (var number in numbers)\n{\n\t...\n}\n```\n",
+			"styleAttributes":{},
+			"x":8000,
+			"y":2252,
+			"width":340,
+			"height":177
+		},
+		{
+			"id":"d51d03d607d96699",
+			"type":"text",
+			"text":"```\nwhile (i < 10)\n{\n\t...\n\ti++;\n}\n```\n",
+			"styleAttributes":{},
+			"x":8000,
+			"y":2472,
+			"width":340,
+			"height":177
+		},
+		{
+			"id":"5df783a8afa3ab8f",
+			"type":"text",
+			"text":"# Iteration",
+			"styleAttributes":{},
+			"x":7680,
+			"y":2531,
+			"width":159,
 			"height":60
+		},
+		{
+			"id":"cf7482ace286e2b7",
+			"type":"text",
+			"text":"- `break` - jumps out of the loop\n- `continue` - jumps to the next iteration",
+			"styleAttributes":{},
+			"x":8000,
+			"y":2922,
+			"width":363,
+			"height":100
+		},
+		{
+			"id":"193558cb2c1d46cd",
+			"type":"text",
+			"text":"```\ndo\n{\n\t...\n\ti++;\n} while (i < 10);\n```\n",
+			"styleAttributes":{},
+			"x":8000,
+			"y":2702,
+			"width":340,
+			"height":177
+		},
+		{
+			"id":"315f12d212c67dbe",
+			"type":"text",
+			"text":"Like a while loop, but this runs the block of code, THEN checks if a condition is true to see if it should continue or not. This block is therefore executed at least once",
+			"styleAttributes":{},
+			"x":8480,
+			"y":2690,
+			"width":260,
+			"height":202
 		},
 		{
 			"id":"2be750363002e3bf",
 			"type":"text",
 			"text":"Switch / Case",
 			"styleAttributes":{},
-			"x":6148,
-			"y":2580,
+			"x":6089,
+			"y":2658,
 			"width":140,
 			"height":60
+		},
+		{
+			"id":"d7c40a2350493cad",
+			"type":"text",
+			"text":"If / Else",
+			"styleAttributes":{},
+			"x":6089,
+			"y":2143,
+			"width":98,
+			"height":60
+		},
+		{
+			"id":"c879abc1de10336e",
+			"type":"text",
+			"text":"```c#\nif (condition)\n{\n\tsomeStatements\n}\nelse if (condition)\n{\n\tsomeStatements\n}\nelse\n{\n\tsomeStatements\n}\n```",
+			"styleAttributes":{},
+			"x":6400,
+			"y":2000,
+			"width":300,
+			"height":346
 		},
 		{
 			"id":"af47390b70d57373",
 			"type":"text",
 			"text":"```c#\nswitch(role)\n{\n\tcase Role.Admin:\n\t\t...\n\t\tbreak;\n\tcase Role.Moderator:\n\t\t...\n\t\tbreak;\n\tDefault:\n\t\t...\n\t\tbreak;\n}\n```",
 			"styleAttributes":{},
-			"x":6520,
-			"y":2460,
+			"x":6400,
+			"y":2515,
 			"width":300,
 			"height":346
 		},
@@ -1271,57 +1178,351 @@
 			"type":"text",
 			"text":"Takes the `role` variable, and compares it with the values after each case - so if `role` == `Role.Admin`, then something happens, for example. If none of these conditions are true, then the default block runs.",
 			"styleAttributes":{},
-			"x":6960,
-			"y":2579,
-			"width":520,
-			"height":109
+			"x":6877,
+			"y":2587,
+			"width":320,
+			"height":202
 		},
 		{
 			"id":"e8acd72cc3ddfa7a",
 			"type":"text",
 			"text":"`float price = (isGoldCustomer) ? 19.95f :  29.95f;`",
 			"styleAttributes":{},
-			"x":6740,
+			"x":6580,
 			"y":3000,
 			"width":457,
 			"height":60
 		},
 		{
-			"id":"5df783a8afa3ab8f",
+			"id":"b0e87901537ea325",
 			"type":"text",
-			"text":"# Iteration",
+			"text":"# Conditional Statements",
 			"styleAttributes":{},
-			"x":8260,
-			"y":2300,
-			"width":148,
-			"height":60
-		},
-		{
-			"id":"11f1ed964d881a01",
-			"type":"text",
-			"text":"```\nfor (var i = 0; i < 10; i++)\n{\n\t...\n}\n```\n",
-			"styleAttributes":{},
-			"x":8560,
-			"y":2258,
-			"width":308,
-			"height":145
+			"x":5580,
+			"y":2643,
+			"width":323,
+			"height":90
 		},
 		{
 			"id":"845484929b2da434",
 			"type":"text",
 			"text":"- `var i = 0` is the counter variable.\n- `i < 10` is the condition clause - so the for loop will execute as long as this condition is valid\n- `i++` is the iteration clause. Here we typically increment/decrement the counter variable.",
 			"styleAttributes":{},
-			"x":9000,
-			"y":2226,
-			"width":318,
+			"x":8480,
+			"y":2042,
+			"width":427,
+			"height":154
+		},
+		{
+			"id":"30eb45835d9ffda7",
+			"type":"text",
+			"text":"This is for iterating through elements of an enumerable object (anything of a list/array nature)",
+			"styleAttributes":{},
+			"x":8480,
+			"y":2295,
+			"width":304,
+			"height":92
+		},
+		{
+			"id":"d897e3b188062a3e",
+			"type":"text",
+			"text":"a",
+			"styleAttributes":{"textAlign":"center","border":"invisible"},
+			"x":2640,
+			"y":1690,
+			"width":60,
+			"height":60
+		},
+		{
+			"id":"da6900e5d0900a3c",
+			"type":"text",
+			"text":"b",
+			"styleAttributes":{"textAlign":"center","border":"invisible"},
+			"x":2640,
+			"y":1940,
+			"width":60,
+			"height":60
+		},
+		{"id":"b8601501d5ca2c8e","type":"file","file":"img/specifying-real-numbers.png","x":3430,"y":1416,"width":400,"height":181},
+		{
+			"id":"6d54a77a1310f0c5",
+			"type":"text",
+			"text":"This can get tricky - if you want to assign an actual float to `float number`, you need to write the `f` after the value, otherwise it's considered a double, Same for decimal, but with an `m`",
+			"styleAttributes":{},
+			"x":3960,
+			"y":1449,
+			"width":400,
+			"height":115
+		},
+		{"id":"bb8d4428d3a6d94b","type":"file","file":"img/primitive-types.png","x":2890,"y":1397,"width":400,"height":218},
+		{
+			"id":"0eb4ad6357aa07b3",
+			"type":"text",
+			"text":"Conditional Operators",
+			"styleAttributes":{},
+			"x":6089,
+			"y":3000,
+			"width":203,
+			"height":60
+		},
+		{
+			"id":"97b1e0537b3637da",
+			"type":"text",
+			"text":"# Working with pointers",
+			"styleAttributes":{},
+			"x":4680,
+			"y":950,
+			"width":300,
+			"height":100
+		},
+		{
+			"id":"9fb3d6b3f6be24b9",
+			"type":"text",
+			"text":"```c#\nusing System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      unsafe{\n        int number = 1;\n        int *n = &number;\n        string strcptr = Convert.ToString((long)n, 16);\n        Console.WriteLine(strcptr);\n      }\n    }\n  }\n}\n```",
+			"styleAttributes":{},
+			"x":5280,
+			"y":1000,
+			"width":530,
+			"height":490
+		},
+		{
+			"id":"2c26845f70e848d1",
+			"type":"text",
+			"text":"Put the code with pointers into an `unsafe{}` block",
+			"styleAttributes":{},
+			"x":5300,
+			"y":710,
+			"width":260,
+			"height":70
+		},
+		{
+			"id":"ce06098b801da3ee",
+			"type":"text",
+			"text":"Go into the `.csproj` file and add `    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>\n`",
+			"styleAttributes":{},
+			"x":5700,
+			"y":710,
+			"width":650,
+			"height":70
+		},
+		{
+			"id":"69f3ab5921218c6c",
+			"type":"text",
+			"text":"This is because it's the default datatype used by the C# compiler when using real numbers. So you need to specify the `f` or `m`. (But i don't really get why writing the data type before that doesn't work?)",
+			"styleAttributes":{},
+			"x":4030,
+			"y":1984,
+			"width":260,
+			"height":226
+		},
+		{
+			"id":"5ae075cad0ce10de",
+			"type":"text",
+			"text":"- Allocated on stack\n- Memory allocation done automatically\n- Immediately removed when out of scope",
+			"styleAttributes":{},
+			"x":1160,
+			"y":1814,
+			"width":400,
+			"height":154
+		},
+		{
+			"id":"af3e755db5ad6d85",
+			"type":"text",
+			"text":"\n```c#\nusing System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      int a = 10;\n      int b = a;\n      b++;\n      Console.WriteLine(\"a: {0}, b: {1}\", a, b);\n    }\n  }\n}\n```",
+			"styleAttributes":{},
+			"x":1860,
+			"y":1669,
+			"width":472,
+			"height":442
+		},
+		{
+			"id":"6c4257eee049ca0c",
+			"type":"text",
+			"text":"- You need to allocate memory\n- Memory allocated on heap\n- Garbage collection will look for unused objects and remove them. In some languages this is done manually.",
+			"styleAttributes":{},
+			"x":328,
+			"y":1786,
+			"width":300,
 			"height":209
+		},
+		{
+			"id":"f0c25616644e96ed",
+			"type":"text",
+			"text":"```c#\nusing System;\n\nnamespace HelloWorld\n{\n  class Program\n  {\n    static void Main(string[] args)\n    {\n      int[] array1 = new int[3] {1, 2, 3};\n      int[] array2 = array1;\n      array2[0] = 0;\n\n      Console.WriteLine(\"array1: {0}, array2: {1}\", array1[0], array2[0]);\n    }\n  }\n}\n```",
+			"styleAttributes":{},
+			"x":-640,
+			"y":1657,
+			"width":686,
+			"height":466
+		},
+		{
+			"id":"bae4b2711c53be71",
+			"type":"text",
+			"text":"So basically both these arrays are referencing exactly the same list, it's not a copy of the list - that means that when you edit the list of one, the other one, referencing the exact same list, will show the changes when printed",
+			"styleAttributes":{},
+			"x":-1340,
+			"y":2460,
+			"width":391,
+			"height":145
+		},
+		{
+			"id":"1b9572714cf81b2c",
+			"type":"text",
+			"text":"```c#\nint[] numbers = new int[3];\n\nnumbers[0] = 1;\nnumbers[1] = 2;\nnumbers[2] = 3;\n```",
+			"styleAttributes":{},
+			"x":-3040,
+			"y":3185,
+			"width":300,
+			"height":202
+		},
+		{
+			"id":"57bb47c308b63ae2",
+			"type":"text",
+			"text":"Represents a fixed number of variables of a particular type",
+			"styleAttributes":{},
+			"x":-2801,
+			"y":3500,
+			"width":268,
+			"height":96,
+			"color":"4"
+		},
+		{
+			"id":"9209c251df6d9b96",
+			"type":"text",
+			"text":"```c#\nint[] numbers = new int[3] {1, 2 3};\n```",
+			"styleAttributes":{},
+			"x":-2557,
+			"y":3185,
+			"width":374,
+			"height":87
+		},
+		{
+			"id":"f7705ea6b3f6db88",
+			"type":"text",
+			"text":"```c#\nint[] numbers = new int[3] {1, 2 3};\n```",
+			"styleAttributes":{},
+			"x":-5319,
+			"y":2760,
+			"width":382,
+			"height":60
+		},
+		{
+			"id":"35b2b703bd85a310",
+			"type":"text",
+			"text":"```c#\nint[,] numbers = new int[3, 4]\n{\n{0, 1, 2, 3},\n{0, 2, 3, 1},\n{1, 4, 3, 2},\n};\nConsole.WriteLine(numbers[2,1]);\n```",
+			"styleAttributes":{},
+			"x":-5279,
+			"y":3008,
+			"width":422,
+			"height":221
+		},
+		{
+			"id":"d69aa23354331c1d",
+			"type":"text",
+			"text":"Output 2",
+			"styleAttributes":{},
+			"x":-5131,
+			"y":2900,
+			"width":127,
+			"height":60
+		},
+		{
+			"id":"0539f102e8dbd68b",
+			"type":"text",
+			"text":"Can also do a 3 dimensional array",
+			"styleAttributes":{},
+			"x":-5659,
+			"y":3089,
+			"width":300,
+			"height":60
+		},
+		{
+			"id":"518ca4c47c834d3a",
+			"type":"text",
+			"text":"      int[,,] numbers = new int[2,2,3]\n      {\n        {{1,2,3},{4,5,6}},\n        {{7,8,9},{10,11,12}},\n      };\n      Console.WriteLine(numbers[0,1,1]);\n",
+			"styleAttributes":{},
+			"x":-6119,
+			"y":3018,
+			"width":382,
+			"height":202
+		},
+		{
+			"id":"de4bca80ed672d20",
+			"type":"text",
+			"text":"Outputs 5",
+			"styleAttributes":{},
+			"x":-5995,
+			"y":2900,
+			"width":134,
+			"height":60
+		},
+		{
+			"id":"35a5de62d0a9707b",
+			"type":"text",
+			"text":"Rectangular\n\n| 0   | 1   | 2   | 3   |\n| --- | --- | --- | --- |\n| 0   | 2   | 3   | 1   |\n| 1   | 4   | 3   | 2   |\n",
+			"styleAttributes":{},
+			"x":-4739,
+			"y":3030,
+			"width":280,
+			"height":177
+		},
+		{
+			"id":"3cfc8ea5565c8dee",
+			"type":"text",
+			"text":"Jagged\n\n| 0   | 1   |     |     |\n| --- | --- | --- | --- |\n| 0   | 1   | 2   | 3   |\n| 0   | 1   | 2   |     |\n",
+			"styleAttributes":{},
+			"x":-4739,
+			"y":3250,
+			"width":280,
+			"height":177
+		},
+		{
+			"id":"d33b915b2dfb457e",
+			"type":"text",
+			"text":"\n| 0   | 1   | 2   |\n| --- | --- | --- |\n\n",
+			"styleAttributes":{},
+			"x":-4679,
+			"y":2760,
+			"width":220,
+			"height":60
+		},
+		{
+			"id":"82d4661c59c83470",
+			"type":"text",
+			"text":"Single Dimension",
+			"styleAttributes":{},
+			"x":-4339,
+			"y":2760,
+			"width":177,
+			"height":60
+		},
+		{
+			"id":"3a4019f88e811703",
+			"type":"text",
+			"text":"Multi Dimension",
+			"styleAttributes":{},
+			"x":-4332,
+			"y":3199,
+			"width":170,
+			"height":60
+		},
+		{
+			"id":"203adcf2c65b08f6",
+			"type":"text",
+			"text":"Arrays continued...",
+			"styleAttributes":{},
+			"x":-3959,
+			"y":3000,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
 		{
 			"id":"7aadb8fb62e6f8b1",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"0b4195da84b2eb6e",
 			"fromSide":"right",
 			"toNode":"5c87b32b7c79b2a6",
@@ -1329,8 +1530,9 @@
 		},
 		{
 			"id":"f76b1922ef2e5d39",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"5c87b32b7c79b2a6",
 			"fromSide":"right",
 			"toNode":"0a8c11081c6177a4",
@@ -1338,8 +1540,9 @@
 		},
 		{
 			"id":"efc5fce1747eaaca",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"0a8c11081c6177a4",
 			"fromSide":"right",
 			"toNode":"557d19ce2a356575",
@@ -1347,7 +1550,7 @@
 		},
 		{
 			"id":"7fb4f5f30009ead7",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"0a8c11081c6177a4",
 			"fromSide":"right",
@@ -1356,7 +1559,7 @@
 		},
 		{
 			"id":"714249d63d5e22f9",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"0a8c11081c6177a4",
 			"fromSide":"right",
@@ -1365,8 +1568,9 @@
 		},
 		{
 			"id":"5961f5043b2357f7",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"0b4195da84b2eb6e",
 			"fromSide":"top",
 			"toNode":"586db2abd17d3c97",
@@ -1374,7 +1578,7 @@
 		},
 		{
 			"id":"35d5dd82ac69e9d5",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"5c87b32b7c79b2a6",
 			"fromSide":"top",
@@ -1383,8 +1587,9 @@
 		},
 		{
 			"id":"9dc41f398aa42e8c",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"5c87b32b7c79b2a6",
 			"fromSide":"right",
 			"toNode":"1f1525450473a0f7",
@@ -1392,7 +1597,7 @@
 		},
 		{
 			"id":"2292118eb288ae16",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromFloating":false,
 			"fromNode":"1f1525450473a0f7",
@@ -1402,7 +1607,7 @@
 		},
 		{
 			"id":"9c07ce3e62485c43",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"1f1525450473a0f7",
 			"fromSide":"right",
@@ -1411,7 +1616,7 @@
 		},
 		{
 			"id":"1770cda41e585993",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"5770762ba92506dc",
 			"fromSide":"right",
@@ -1420,7 +1625,7 @@
 		},
 		{
 			"id":"5ceb04d58417a6c4",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"b578596ee2c23ead",
 			"fromSide":"right",
@@ -1429,7 +1634,7 @@
 		},
 		{
 			"id":"1c3f890a1cc42897",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromFloating":false,
 			"fromNode":"23d1a9a9abe24838",
@@ -1439,7 +1644,7 @@
 		},
 		{
 			"id":"4ad27abee5629393",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"4e91ab8182bec5bc",
 			"fromSide":"right",
@@ -1448,8 +1653,9 @@
 		},
 		{
 			"id":"a1a8bde574ce238c",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"4cb682761ef8645c",
 			"fromSide":"right",
 			"toNode":"786015e2f3314e1d",
@@ -1458,7 +1664,7 @@
 		},
 		{
 			"id":"32724958b228de71",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"4e91ab8182bec5bc",
 			"fromSide":"right",
@@ -1467,8 +1673,9 @@
 		},
 		{
 			"id":"7c1136f67fe048c7",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"77fa633ec5d53dc0",
 			"fromSide":"right",
 			"toNode":"5544cee33cc1e671",
@@ -1476,7 +1683,7 @@
 		},
 		{
 			"id":"8330862cf2df5b83",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"786015e2f3314e1d",
 			"fromSide":"right",
@@ -1485,8 +1692,9 @@
 		},
 		{
 			"id":"3135aab4edcd274a",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"5544cee33cc1e671",
 			"fromSide":"right",
 			"toNode":"1c2c7d304ad749d0",
@@ -1494,8 +1702,11 @@
 		},
 		{
 			"id":"75e3d4119fede1d6",
-			"styleAttributes":{},
+			"styleAttributes":{
+				"pathfindingMethod":null
+			},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"1c2c7d304ad749d0",
 			"fromSide":"right",
 			"toNode":"c3faaf645eaed5de",
@@ -1503,7 +1714,9 @@
 		},
 		{
 			"id":"4b339d95f2f729e2",
-			"styleAttributes":{},
+			"styleAttributes":{
+				"pathfindingMethod":null
+			},
 			"toFloating":false,
 			"fromNode":"c3faaf645eaed5de",
 			"fromSide":"right",
@@ -1512,7 +1725,9 @@
 		},
 		{
 			"id":"f623a0ff6fab880a",
-			"styleAttributes":{},
+			"styleAttributes":{
+				"pathfindingMethod":null
+			},
 			"toFloating":false,
 			"fromNode":"1fa85cc150a38bde",
 			"fromSide":"right",
@@ -1521,8 +1736,9 @@
 		},
 		{
 			"id":"f2f92526b14a3108",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"c946dd4d098c9deb",
 			"fromSide":"top",
 			"toNode":"203d64cec2322b8b",
@@ -1530,7 +1746,9 @@
 		},
 		{
 			"id":"e9ac9af2cbae0565",
-			"styleAttributes":{},
+			"styleAttributes":{
+				"pathfindingMethod":null
+			},
 			"toFloating":false,
 			"fromNode":"c946dd4d098c9deb",
 			"fromSide":"right",
@@ -1603,8 +1821,9 @@
 		},
 		{
 			"id":"1cbb7f9b91b734ff",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"b578596ee2c23ead",
 			"fromSide":"top",
 			"toNode":"af6ae4188ef4ac97",
@@ -1612,8 +1831,9 @@
 		},
 		{
 			"id":"7ad8b10b106a2c29",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"0b4195da84b2eb6e",
 			"fromSide":"left",
 			"toNode":"809e0213b55f8cde",
@@ -1621,7 +1841,7 @@
 		},
 		{
 			"id":"9037ade49f4988ef",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"5770762ba92506dc",
 			"fromSide":"bottom",
@@ -1650,52 +1870,6 @@
 			"fromSide":"bottom",
 			"toNode":"69f3ab5921218c6c",
 			"toSide":"top"
-		},
-		{
-			"id":"2ab674e7cb65c1e0",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"8fd67c134cdbdc21",
-			"fromSide":"left",
-			"toNode":"c50d516ba79f4696",
-			"toSide":"right"
-		},
-		{
-			"id":"1533aa68f6649ea3",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"8fd67c134cdbdc21",
-			"fromSide":"left",
-			"toNode":"25a86560c6b60e8f",
-			"toSide":"right"
-		},
-		{
-			"id":"9c8a0d31e6b046f0",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"8fd67c134cdbdc21",
-			"fromSide":"left",
-			"toNode":"6bf684b38f4bdf90",
-			"toSide":"right"
-		},
-		{
-			"id":"6de714c8c61a7a2c",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"8fd67c134cdbdc21",
-			"fromSide":"left",
-			"toNode":"ccbf281a88bd5571",
-			"toSide":"right"
-		},
-		{
-			"id":"342387f214517862",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"8fd67c134cdbdc21",
-			"fromSide":"left",
-			"toNode":"48de27fe2f28fe09",
-			"toSide":"right"
 		},
 		{
 			"id":"34c78a59a82e4cc3",
@@ -2125,8 +2299,9 @@
 		},
 		{
 			"id":"c51d2f2e7382423c",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"97b1e0537b3637da",
 			"fromSide":"right",
 			"toNode":"9fb3d6b3f6be24b9",
@@ -2135,8 +2310,9 @@
 		},
 		{
 			"id":"b1aa61b40092313b",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"97b1e0537b3637da",
 			"fromSide":"right",
 			"toNode":"5e5308d05df094ba",
@@ -2166,7 +2342,7 @@
 		},
 		{
 			"id":"e3653cb37f419127",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"b0e87901537ea325",
 			"fromSide":"right",
@@ -2175,7 +2351,7 @@
 		},
 		{
 			"id":"2f80abb17c34374e",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"b0e87901537ea325",
 			"fromSide":"right",
@@ -2184,7 +2360,7 @@
 		},
 		{
 			"id":"0e83db181f2e4d02",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"b0e87901537ea325",
 			"fromSide":"right",
@@ -2193,8 +2369,9 @@
 		},
 		{
 			"id":"fdeaa1021919878c",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"d7c40a2350493cad",
 			"fromSide":"right",
 			"toNode":"c879abc1de10336e",
@@ -2202,7 +2379,7 @@
 		},
 		{
 			"id":"ac3f9ff9dcb3659a",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"2be750363002e3bf",
 			"fromSide":"right",
@@ -2211,7 +2388,7 @@
 		},
 		{
 			"id":"36f8113d5f275f11",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"af47390b70d57373",
 			"fromSide":"right",
@@ -2220,8 +2397,9 @@
 		},
 		{
 			"id":"f8c764133287c1d9",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"0eb4ad6357aa07b3",
 			"fromSide":"right",
 			"toNode":"e8acd72cc3ddfa7a",
@@ -2230,7 +2408,7 @@
 		},
 		{
 			"id":"c7cb3997fe33a25f",
-			"styleAttributes":{},
+			"styleAttributes":{"pathfindingMethod":"square"},
 			"toFloating":false,
 			"fromNode":"5df783a8afa3ab8f",
 			"fromSide":"right",
@@ -2245,6 +2423,234 @@
 			"fromSide":"right",
 			"toNode":"845484929b2da434",
 			"toSide":"left"
+		},
+		{
+			"id":"d3752497e589e5f5",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"5df783a8afa3ab8f",
+			"fromSide":"right",
+			"toNode":"a44e1519eca2fae7",
+			"toSide":"left"
+		},
+		{
+			"id":"055f369122d3a727",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"a44e1519eca2fae7",
+			"fromSide":"right",
+			"toNode":"30eb45835d9ffda7",
+			"toSide":"left"
+		},
+		{
+			"id":"46048ac0b88ca0fd",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"5df783a8afa3ab8f",
+			"fromSide":"right",
+			"toNode":"d51d03d607d96699",
+			"toSide":"left"
+		},
+		{
+			"id":"b64dd392693dc63c",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"5df783a8afa3ab8f",
+			"fromSide":"right",
+			"toNode":"193558cb2c1d46cd",
+			"toSide":"left"
+		},
+		{
+			"id":"bb459b6d739767a4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"193558cb2c1d46cd",
+			"fromSide":"right",
+			"toNode":"315f12d212c67dbe",
+			"toSide":"left"
+		},
+		{
+			"id":"706a4bd3d650ef40",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"5df783a8afa3ab8f",
+			"fromSide":"right",
+			"toNode":"cf7482ace286e2b7",
+			"toSide":"left"
+		},
+		{
+			"id":"74b7d7f2e956e0f4",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"895af25396979b74",
+			"fromSide":"left",
+			"toNode":"c50d516ba79f4696",
+			"toSide":"right"
+		},
+		{
+			"id":"87dbf5f3515e93f3",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"895af25396979b74",
+			"fromSide":"left",
+			"toNode":"25a86560c6b60e8f",
+			"toSide":"right"
+		},
+		{
+			"id":"f09784186b5e14f4",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"895af25396979b74",
+			"fromSide":"left",
+			"toNode":"6bf684b38f4bdf90",
+			"toSide":"right"
+		},
+		{
+			"id":"1eeb83ced8311076",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"895af25396979b74",
+			"fromSide":"left",
+			"toNode":"ccbf281a88bd5571",
+			"toSide":"right"
+		},
+		{
+			"id":"fd3c095704b26ab0",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"895af25396979b74",
+			"fromSide":"left",
+			"toNode":"48de27fe2f28fe09",
+			"toSide":"right"
+		},
+		{
+			"id":"f44edafcfc700f6c",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"toFloating":false,
+			"fromNode":"daf654d841dc0079",
+			"fromSide":"bottom",
+			"toNode":"57bb47c308b63ae2",
+			"toSide":"top",
+			"label":"Definition"
+		},
+		{
+			"id":"f9406d77ccbee6f5",
+			"styleAttributes":{"pathfindingMethod":"square","path":"short-dashed"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"daf654d841dc0079",
+			"fromSide":"left",
+			"toNode":"203adcf2c65b08f6",
+			"toSide":"right",
+			"color":"#454545"
+		},
+		{
+			"id":"4a871a8968e67870",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"203adcf2c65b08f6",
+			"fromSide":"left",
+			"toNode":"82d4661c59c83470",
+			"toSide":"right"
+		},
+		{
+			"id":"192d3cd1356026d3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"203adcf2c65b08f6",
+			"fromSide":"left",
+			"toNode":"3a4019f88e811703",
+			"toSide":"right"
+		},
+		{
+			"id":"29466eaa2332d17b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"d33b915b2dfb457e",
+			"fromSide":"left",
+			"toNode":"f7705ea6b3f6db88",
+			"toSide":"right",
+			"label":"Example"
+		},
+		{
+			"id":"78bd73251730617b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"35a5de62d0a9707b",
+			"fromSide":"left",
+			"toNode":"35b2b703bd85a310",
+			"toSide":"right"
+		},
+		{
+			"id":"f4303cec0c282c2c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"35b2b703bd85a310",
+			"fromSide":"top",
+			"toNode":"d69aa23354331c1d",
+			"toSide":"bottom"
+		},
+		{
+			"id":"7f120dc44d80a6eb",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"82d4661c59c83470",
+			"fromSide":"left",
+			"toNode":"d33b915b2dfb457e",
+			"toSide":"right"
+		},
+		{
+			"id":"b01f5637c515c5b2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3a4019f88e811703",
+			"fromSide":"left",
+			"toNode":"35a5de62d0a9707b",
+			"toSide":"right"
+		},
+		{
+			"id":"4d2f107c1d4424d9",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3a4019f88e811703",
+			"fromSide":"left",
+			"toNode":"3cfc8ea5565c8dee",
+			"toSide":"right"
+		},
+		{
+			"id":"7cabc693affe0378",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"35b2b703bd85a310",
+			"fromSide":"left",
+			"toNode":"0539f102e8dbd68b",
+			"toSide":"right"
+		},
+		{
+			"id":"2e5c0361695b1d92",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"0539f102e8dbd68b",
+			"fromSide":"left",
+			"toNode":"518ca4c47c834d3a",
+			"toSide":"right"
+		},
+		{
+			"id":"cd6372e259b755ba",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"518ca4c47c834d3a",
+			"fromSide":"top",
+			"toNode":"de4bca80ed672d20",
+			"toSide":"bottom"
 		}
 	],
 	"metadata":{
