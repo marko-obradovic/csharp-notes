@@ -11,23 +11,6 @@
             "id": "3c34830ebe1eaded",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "csharp-notes.canvas",
-                "viewState": {
-                  "x": -3493.6982243516077,
-                  "y": 4881.777665610918,
-                  "zoom": 0.18537558948427646
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "csharp-notes"
-            }
-          },
-          {
-            "id": "3ac792a8c3af38ca",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
                 "file": "docs/dates-and-time.md",
@@ -38,8 +21,7 @@
               "title": "dates-and-time"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,12 +180,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "3ac792a8c3af38ca",
+  "active": "3c34830ebe1eaded",
   "lastOpenFiles": [
+    "csharp-notes.canvas",
+    "docs/general.md",
+    "docs/dates-and-time.md",
     "weaknesses.md~",
     "docs/lists.md",
-    "docs/dates-and-time.md",
-    "csharp-notes.canvas",
     "docs/enums.md",
     "docs/strings.md",
     "docs/array.md",

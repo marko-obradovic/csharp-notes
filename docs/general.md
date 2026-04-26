@@ -1,0 +1,1 @@
+- Greyed-out code means the IDE believes it’s unnecessary or unused — but not always that you can safely remove it in every context.
