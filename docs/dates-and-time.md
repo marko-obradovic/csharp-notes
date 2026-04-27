@@ -34,7 +34,7 @@ Console.WriteLine(now.ToString("yyyy-MM-dd HH:mm"));
 // Output: 2015-05-23 12:43
 ```
 
-[Format Specifiers](https://learn.microsoft.com/en-us/dotnet/standard/base-types/formatting-types#the-tostring-method-and-format-strings)
+[ToString Format Specifiers](https://learn.microsoft.com/en-us/dotnet/standard/base-types/formatting-types#the-tostring-method-and-format-strings)
 
 # TimeSpan
 Represents a length of time
